@@ -3,3 +3,4 @@ repos:
     rev: 04cc33d00c783ba58039b7be3d8340b8661aaba7
     hooks:
       - id: changelog-check
+        stages: [manual, push]
