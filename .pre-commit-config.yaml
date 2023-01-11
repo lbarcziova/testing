@@ -1,6 +1,7 @@
 repos:
   - repo: https://github.com/lbarcziova/changelog-check
-    rev: 04cc33d00c783ba58039b7be3d8340b8661aaba7
+    rev: 28996d2116bf21a82d5072eea98776be4986531b
     hooks:
       - id: changelog-check
         stages: [manual, push]
+        args: [https://github.com/lbarcziova/testing]
