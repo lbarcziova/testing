@@ -2,6 +2,11 @@ name: Bug Report
 description: Report a bug encountered while using Packit Service
 labels: kind/bug
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues to avoid creating duplicates. 
+
   - type: textarea
     id: description
     attributes:
@@ -50,11 +55,26 @@ body:
       description: What is the impacted category?
       multiple: true
       options:
-        - a
+        - a b c
         - b
         - c
     validations:
       required: true
+
+  - type: dropdown
+    id: category-2
+    attributes:
+      label: category
+      description: What is the impacted category?
+      multiple: true
+      options:
+        - a b c
+        - b
+        - c
+    validations:
+      required: false
+
+
   - type: checkboxes
     attributes:
       label: Workaround
